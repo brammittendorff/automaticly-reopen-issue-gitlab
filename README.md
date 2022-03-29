@@ -53,7 +53,8 @@ You can deploy this project directly to Heroku with:
 
 ```
 heroku create -a automaticly-reopen --region eu
-heroku config:set DISABLE_COLLECTSTATIC=1 
+git push heroku master
+heroku config:set DISABLE_COLLECTSTATIC=1
 ```
 
 Or run it locally with:
