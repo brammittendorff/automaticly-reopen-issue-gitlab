@@ -49,7 +49,14 @@ pip install -r requirements.txt
 
 ## Usage
 
-You can deploy this project directly to Heroku or run it locally with:
+You can deploy this project directly to Heroku with:
+
+```
+heroku create -a automaticly-reopen --region eu
+heroku config:set DISABLE_COLLECTSTATIC=1 
+```
+
+Or run it locally with:
 
 ```
 ./manage.py runserver
