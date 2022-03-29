@@ -20,7 +20,9 @@ GITLAB_ACCESS_TOKEN="your-specialaccestokengitlab"
 GITLAB_API_URL="https://gitlab.com/api/v4/projects/support%2Fbot"
 ```
 
-Note: remember if you are using this url to make sure you will use instead of a `/` the character `%2F`.
+- Note: remember if you are using this url to make sure you will use instead of a `/` the character `%2F`.
+  
+- Note: if you want to set the x-gitlab-token to make sure unauthorized people can not use this webhook you can use the env variable: `GITLAB_X_TOKEN`
 
 ## Installing the packages
 
