@@ -10,7 +10,21 @@ This application will make sure you can automatily reopen Service Desk issues on
 
 ## Installation
 
-Please make sure you test the webhook on <https://webhook.site> to see what value BOT_USERNAME should have in your case.
+Please make sure you test the webhook on <https://webhook.site> to see what value BOT_USERNAME should have in your case:
+
+```
+{
+  "object_kind": "note",
+  "event_type": "confidential_note",
+  "user": {
+    "id": 1337,
+    "name": "GitLab Support Bot",
+    "username": "support-bot",
+    "avatar_url": "[REDACTED]",
+    "email": "[REDACTED]"
+  },
+}
+```
 
 ## Environment variables
 
