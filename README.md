@@ -15,6 +15,7 @@ This application will make sure you can automatily reopen Service Desk issues on
 Create a `.env` file with the following contents:
 
 ```
+SECRET_KEY="somesecretkeyfromdjango"
 BOT_USERNAME="support-bot"
 GITLAB_ACCESS_TOKEN="your-specialaccestokengitlab"
 GITLAB_API_URL="https://gitlab.com/api/v4/projects/support%2Fbot"
