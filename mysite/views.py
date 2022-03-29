@@ -42,4 +42,4 @@ def webhook(request):
                 else:
                     logger.warning("Possibly the gitlab access token is wrong, or you got a malformed gitlab url!")
 
-    return HttpResponse(request)
+    return HttpResponse('')
