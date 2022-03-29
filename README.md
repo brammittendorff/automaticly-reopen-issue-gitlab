@@ -10,6 +10,8 @@ This application will make sure you can automatily reopen Service Desk issues on
 
 ## Installation
 
+Please make sure you test the webhook on <https://webhook.site> to see what value BOT_USERNAME should have in your case.
+
 ## Environment variables
 
 Create a `.env` file with the following contents:
