@@ -24,7 +24,7 @@ def webhook(request):
             raise PermissionDenied()
     if request.body:
         json_body = json.loads(request.body)
-        if json_body and json_body['user'] and json_body['user']['username']:
+        if json_body and json_body['user'] and json_body['user']['username'] and json_body['issue']:
             if json_body['user']['username'] == settings.BOT_USERNAME:
                 logger.info("Bot username is correct: {username}".format(
                     username=json_body['user']['username']))
